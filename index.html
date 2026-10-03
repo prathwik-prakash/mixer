@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Knead. — The Standing Mixer, Reconsidered</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-mark">K.</div>
+    <div class="preloader-track"><div class="preloader-bar" id="preloaderBar"></div></div>
+    <div class="preloader-pct" id="preloaderPct">0%</div>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <div class="nav-mark">KNEAD<span class="nav-dot">.</span></div>
+    <nav class="nav-links">
+      <a href="#details">Craft</a>
+      <a href="#specs">Specification</a>
+      <a href="#cta">Own One</a>
+    </nav>
+    <a href="#cta" class="nav-cta">Reserve — $649</a>
+  </header>
+
+  <!-- Hero: pinned scroll-scrub sequence -->
+  <section class="hero" id="hero">
+    <div class="hero-sticky">
+      <canvas id="mixerCanvas"></canvas>
+
+      <div class="hero-vignette"></div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">The Standing Mixer — No. 01</p>
+        <h1>Turned by hand.<br>Trusted by touch.</h1>
+      </div>
+
+      <div class="hero-copy-end">
+        <p class="eyebrow">Every angle, considered</p>
+        <h2>Nothing on this counter<br>is an accident.</h2>
+      </div>
+
+      <!-- Signature element: brass dial synced to scroll rotation -->
+      <div class="dial" aria-hidden="true">
+        <svg viewBox="0 0 120 120" class="dial-svg">
+          <circle cx="60" cy="60" r="52" class="dial-track"></circle>
+          <circle cx="60" cy="60" r="52" class="dial-fill" id="dialFill"></circle>
+        </svg>
+        <div class="dial-center">
+          <span id="dialDeg">0°</span>
+        </div>
+      </div>
+
+      <div class="scroll-cue">
+        <span>Scroll to rotate</span>
+        <div class="scroll-cue-line"><i></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro statement -->
+  <section class="statement">
+    <p><span class="statement-drop">A</span> mixer earns its place on the counter the way a good knife earns its place in the hand — through years of quiet, unglamorous reliability. We built ours backwards from that idea.</p>
+  </section>
+
+  <!-- Detail sections -->
+  <section class="details" id="details">
+
+    <article class="detail">
+      <div class="detail-media" style="background-image:url('frames/frame_0040.jpg'); background-position: 30% 45%; background-size: 260%;"></div>
+      <div class="detail-copy">
+        <span class="detail-index">Mechanism</span>
+        <h3>Planetary motion, the old way</h3>
+        <p>The beater spins on its own axis while orbiting the bowl — the same path bakers have relied on for a century. It reaches every inch of the bowl in every rotation, so nothing hides at the edges unmixed.</p>
+      </div>
+    </article>
+
+    <article class="detail reverse">
+      <div class="detail-media" style="background-image:url('frames/frame_0160.jpg'); background-position: 55% 60%; background-size: 240%;"></div>
+      <div class="detail-copy">
+        <span class="detail-index">Body</span>
+        <h3>Die-cast, not moulded</h3>
+        <p>A single cast-metal body means the head, arm and base move as one — no flex, no rattle at high speed. It's heavier than it needs to be, on purpose. Weight is what keeps it planted on the counter at full tilt.</p>
+      </div>
+    </article>
+
+    <article class="detail">
+      <div class="detail-media" style="background-image:url('frames/frame_0100.jpg'); background-position: 60% 30%; background-size: 220%;"></div>
+      <div class="detail-copy">
+        <span class="detail-index">Control</span>
+        <h3>Ten speeds, one dial</h3>
+        <p>From a fold-in stir to a full-speed whip, the dial resists just enough that you feel each notch pass under your thumb. No screen, no menu — a control you can operate by feel alone, eyes on the bowl.</p>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- Specs -->
+  <section class="specs" id="specs">
+    <h2>Specification</h2>
+    <div class="specs-grid">
+      <div class="spec">
+        <span class="spec-label">Motor</span>
+        <span class="spec-value">325W</span>
+      </div>
+      <div class="spec">
+        <span class="spec-label">Bowl capacity</span>
+        <span class="spec-value">5.5 QT</span>
+      </div>
+      <div class="spec">
+        <span class="spec-label">Speeds</span>
+        <span class="spec-value">10</span>
+      </div>
+      <div class="spec">
+        <span class="spec-label">Attachments</span>
+        <span class="spec-value">3 incl.</span>
+      </div>
+      <div class="spec">
+        <span class="spec-label">Body</span>
+        <span class="spec-value">Die-cast metal</span>
+      </div>
+      <div class="spec">
+        <span class="spec-label">Bowl material</span>
+        <span class="spec-value">Polished steel</span>
+      </div>
+      <div class="spec">
+        <span class="spec-label">Weight</span>
+        <span class="spec-value">11.3 kg</span>
+      </div>
+      <div class="spec">
+        <span class="spec-label">Warranty</span>
+        <span class="spec-value">5 years</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="cta">
+    <h2>Made to outlast the recipe box.</h2>
+    <p>Ships in 3–5 days. Free delivery, white-glove unboxing.</p>
+    <a href="#" class="cta-button">Reserve yours — $649</a>
+    <p class="cta-fine">Finished in Buttercream. Two more finishes arriving this winter.</p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-mark">KNEAD<span class="nav-dot">.</span></div>
+    <p>&copy; 2026 Knead Kitchenware Co. — Built to be handed down.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
